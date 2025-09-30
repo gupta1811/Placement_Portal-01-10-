@@ -1,0 +1,19 @@
+<h2>📢 Application Status Update</h2>
+<p>Dear {{studentName}},</p>
+<p>We have an update regarding your application!</p>
+
+<div class="job-card">
+    <h3>📋 Application Update</h3>
+    <p><strong>Position:</strong> {{jobTitle}}</p>
+    <p><strong>Company:</strong> {{companyName}}</p>
+    <p><strong>New Status:</strong> <strong style="color: {{statusColor}};">{{newStatus}}</strong></p>
+    {{#if recruiterNotes}}
+    <p><strong>Notes:</strong> {{recruiterNotes}}</p>
+    {{/if}}
+</div>
+
+{{#if nextSteps}}
+<p><strong>Next Steps:</strong> {{nextSteps}}</p>
+{{/if}}
+
+<a href="{{dashboardUrl}}" class="btn">View Full Details</a>

@@ -1,0 +1,23 @@
+<h2>🔔 New Job Application Received</h2>
+<p>Dear {{recruiterName}},</p>
+<p>You have received a new application for your job posting!</p>
+
+<div class="job-card">
+    <h3>👤 Applicant Details</h3>
+    <p><strong>Name:</strong> {{applicantName}}</p>
+    <p><strong>Email:</strong> {{applicantEmail}}</p>
+    <p><strong>Applied for:</strong> {{jobTitle}}</p>
+    <p><strong>Application Date:</strong> {{applicationDate}}</p>
+    {{#if resumeUrl}}
+    <p><strong>Resume:</strong> <a href="{{resumeUrl}}">Download Resume</a></p>
+    {{/if}}
+</div>
+
+<div class="job-card">
+    <h3>💬 Cover Letter</h3>
+    <p>{{coverLetter}}</p>
+</div>
+
+<p>Review the application and take the next step in your hiring process!</p>
+
+<a href="{{applicationsUrl}}" class="btn">Review Application</a>
