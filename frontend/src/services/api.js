@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-console.log('API Base URL:', import.meta.env.VITE_API_URL || 'http://localhost:5000/api');
+console.log('API Base URL:', import.meta.env.VITE_API_URL || 'https://placement-portal-01-10.onrender.com');
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://placement-portal-01-10.onrender.com',
   headers: {
     'Content-Type': 'application/json',
   },
